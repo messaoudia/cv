@@ -1,0 +1,446 @@
+# yaml-language-server: $schema=../rendercv/schema.json
+cv:
+  name: Amin Messaoudi
+  headline: Cloud Data Engineer Senior certifié GCP | Data Scientist
+  sub_headline: Certified Google Professional Data Engineer
+  location: Ile-de-France
+  email: ${EMAIL}
+  # photo:
+  phone: "${PHONE_NUMBER}"
+  nationality: Marocain, Français
+  website:
+  social_networks:
+    - network: LinkedIn
+      username: amin-messaoudi
+    - network: GitHub
+      username: messaoudia
+    - network: Malt              # réseau custom
+      username: aminmessaoudi
+      url: https://malt.fr/profile/aminmessaoudi
+      fontawesome_icon: briefcase
+  custom_connections:
+  sections:
+    Présentation:
+      - Cloud Data Engineer spécialisé dans les écosystèmes cloud **GCP** et AWS et dans les plateformes Big Data tel que **Databricks**
+      - Disponible sous **1 mois**
+      # - RenderCV reads a CV written in a YAML file, and generates a PDF with professional typography.
+      # - Each section title is arbitrary.
+      # - You can choose any of the 9 entry types for each section.
+      # - Markdown syntax is supported everywhere. This is **bold**, *italic*, and [link](https://example.com).
+
+    expériences:
+      - company: Freelance
+        position: GCP Data Engineer + DBT
+        date:
+        start_date: 2026-02
+        end_date: present
+        location: Paris, France
+        summary: Conception d'un outil d'analyse, d'ingestion et de traitement des données des taxis de New York jusqu'à leur visualisation
+        highlights:
+          - "Pipeline GCP : [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline)"
+          - "Pipeline DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
+          - "Déploiement du projet avec Terraform"
+          - Mise en place d'un Cloud Run Job pour l'ingestion de données dans Cloud Storage avec envoi de messages sur Pub/Sub
+          - Synchronisation des données stockées dans Cloud Storage vers BigQuery en passant par EventArc
+          - Analyse des données et mise en place des phases de traitement avec DBT, en suivant l'architecture medallion (staging, intermediate, marts) incluant des tests et mise en place de macros
+          - Création et utilisation de divers comptes de service avec le moindre privilège (least privilege)
+          - Utilisation de l'emprunt d'identité de comptes de service
+          - "Compétences : Cloud Run, Artifact Registry, Cloud Storage, IAM, Secret Manager, Parameter Manager, BigQuery, DBT (DBT Core, tests, staging, marts, macros), EventArc, Pub/Sub, Cloud Scheduler, Workflows, DataForm, Looker"
+      - company: Alten
+        position: Cloud Data Engineer – Freelance
+        date:
+        start_date: 2024-06
+        end_date: present
+        location: Courbevoie, France
+        summary: Pilotage d'initiatives d'ingénierie des données au sein du secteur des énergies renouvelables d'un grand groupe français, développement et déploiement de pipelines ETL et de solutions d'IA générative pour automatiser les processus et optimiser l'efficacité opérationnelle afin de répondre aux besoins métiers.
+        highlights:
+          - Développement, orchestration et déploiement de plus de 10 pipelines ETL et de solutions d'IA générative améliorant l'efficacité opérationnelle dans le secteur des énergies renouvelables
+          # - Orchestration de pipelines pour automatiser les processus et améliorer l'expérience utilisateur finale
+          - Analyse de milliards de lignes, plusieurs tera et giga, de données énergétiques quasi temps réel pour calculer des indicateurs de performance destinés aux utilisateurs finaux, en utilisant PySpark et Databricks / Dataiku recipes
+          - Migration et optimisation de divers scripts PySpark sur Dataiku et EKS vers Databricks pour passer d'un temps d'exécution de 5 heures à 12 minutes (-96%)
+          - Migration de scripts PySpark vers Databricks pour une réduction des coûts cloud de 83 € à 1.5 € par run (-98%)
+          - Exploitation d'un projet d'IA générative pour automatiser et simplifier un processus permettant aux opérationnels d'économiser environ 6 millions € par an
+          - Utilisation d'Azure OpenAI et Document Intelligence pour le traitement jusqu'à 200 fichiers par jour, lecture du contenu des PDFs (plus de 10 formats différents) et Excel, puis conversion en données tabulaires pour analyse via Power BI et aide à la prise de décision par les parties prenantes
+          - Déploiement et amélioration d'un système RAG avec optimisation du code, implémentation de fonctionnalités d'appel de fonctions (function calling) et ingénierie de prompts avancés
+          - Déploiement de services cloud AWS via **Terraform**, incluant Lambda, CloudWatch, KMS, SNS et Parameter Store
+          - Migration d'une pipeline ETL massive de Dataiku vers Databricks pour améliorer fiabilité, vitesse et maintenabilité
+          - Administration de Databricks via la création de Bundles, Catalogs, External Locations, Clusters, et mise en œuvre d'une gouvernance avec privilèges minimum pour les utilisateurs
+          - Homogénéisation des environnements de travail pour augmenter la vélocité de l'équipe (centraliser les scripts sur Github, conversion de code NodeJS en Python, centralisation de la documentation sur Confluence)
+          - Animation de rétrospectives pour favoriser la croissance et la maturité technique de l'équipe
+          - "Compétences : ETL, Python, Terraform, PySpark, Databricks, Dataiku, IA générative, AWS, Azure IA"
+      - company: Le Wagon
+        position: Assistant Enseignant – Data Engineer
+        date:
+        start_date: 2024-06
+        end_date: 2024-09
+        location: Remote
+        summary: Accompagnement pédagogique d'une classe de 8-10 étudiants internationaux pour maîtriser les concepts clés d'outils essentiels tels qu'Apache Airflow, Apache Spark, divers outils GCP
+        highlights:
+          - Accompagnement des étudiants dans la résolution d'exercices pratiques et renforcement de leurs compétences techniques
+          - Contribution active au dépôt GitHub de Le Wagon pour améliorer les exercices, les consignes pédagogiques et les solutions proposées
+      - company: Clustaar
+        position: NLP Engineer - Data Engineer
+        date:
+        start_date: 2018-09
+        end_date: 2023-09
+        location: Paris, France
+        summary: Amélioration et supervision d'un moteur NLP développé en interne
+        highlights:
+          - Développement de divers chatbots personnalisés à partir de bases documentaires clients
+          - Recherche de publications académiques pour améliorer les capacités des chatbots et optimiser la précision des modèles NLP
+          - Développement d'un job GCP Kubernetes permettant d'entrainer un modèle ElasticSearch à chaque entrainement du modèle NLP avec backup des données sur Cloud Storage
+          - Développement et entraînement d'un moteur d'auto-complétion sur des données clients pour faciliter l'utilisation des chatbots via Elasticsearch Completion Suggester entrainant un gain de matching (~20%)
+          - Monitoring de job, pods sur Kubernetes
+          - Mise en place d'alerting sur Sentry
+          - Développement et maintenance de librairies PyPI privées, avec PyScaffold, pour une utilisation en interne sur divers outils
+          - Mise en place de différentes tests unitaires avec mocking avancé
+          - Amélioration d'un outil de contrôle de qualité automatique du moteur NLP après chaque mise à jour pour détecter les régressions
+          - Développement d'endpoints backend pour un outil SEO afin de faciliter la mise en place de rapports d'amélioration de référence aux consultants pour leurs clients
+          - Développement d'API backend, avec mise en place de schéma strict, pour un outil SEO permettant aux consultants de générer des rapports d'amélioration de référencement pour leurs clients, avec extraction de ranking Google, position p0 et d'autres indicateurs clés de performance
+          - Formation des clients et des équipes internes pour les aider à comprendre le fonctionnement du moteur NLP et les méthodes d'amélioration
+          - "Compétences : GCP, Python, NLP, Pandas, Kubernetes, MongoDB, PostgreSQL, Elasticsearch, Elastic Cloud, Sentry"
+      - company: Clustaar
+        position: NLP Engineer - Data Engineer (Intern)
+        date:
+        start_date: 2018-03
+        end_date: 2018-08
+        location: Paris, France
+        summary: Amélioration et supervision d'un moteur NLP développé en interne
+        highlights:
+          - Implémentation de plusieurs prototypes pour améliorer le moteur NLP
+          - "Compétences : Python, NLP, Pandas, MongoDB, PostgreSQL, Elasticsearch, Elastic Cloud"
+      - company: Dassault Systèmes
+        position: Software Engineer
+        date:
+        start_date: 2016-09
+        end_date: 2017-09
+        location: Vélizy, France
+        summary: Développement de composants 2D pour une application web 3D CATIA
+        highlights:
+          - Conception et intégration de composants 2D pour une interface web 3D CATIA
+          - "Compétences : NodeJS, ThreeJS"
+      - company: Dassault Systèmes
+        position: Software Engineer (Intern)
+        date:
+        start_date: 2016-03
+        end_date: 2016-08
+        location: Vélizy, France
+        summary: Développement de différents prototypes avec Three.JS
+        highlights:
+          - Ajout d'une fonctionnalité permettant d'intégrer des modèles 2D dans des visualisations 3D
+          - Modernisation d’un composant lecteur vidéo à l’aide de technologies récentes
+          - "Compétences : NodeJS, ThreeJS"
+      - company: Shanghai Jiao Tong University
+        position: Software Engineer (Intern)
+        date:
+        start_date: 2015-05
+        end_date: 2015-08
+        location: Shanghai, China
+        summary: Développement d'une application de reconnaissance alimentaire basée sur la mise en œuvre d'un article de recherche scientifique
+        highlights:
+          - "Compétences : OpenCV, Bag of Words, SVM, C++"
+      - company: Vocapia Research
+        position: Software Mobile Developer (Intern)
+        date:
+        start_date: 2013-07
+        end_date: 2013-09
+        location: Orsay, France
+        summary: Conception et développement d'une application mobile de reconnaissance vocale sur iOS et Android, avec un serveur REST interne pour la reconnaissance vocale et de l'API Google Translate pour la traduction
+        highlights:
+          - Développement d'une application mobile de reconnaissance vocale compatible iOS et Android
+          - Création d'un serveur REST interne pour gérer la reconnaissance vocale
+          - Intégration de l'API Google Translate pour la fonctionnalité de traduction
+          - "Technologies utilisées : Objective-C, Java (Android)"
+    études:
+      - institution: Le Wagon
+        area: Data Engineering
+        degree: Bootcamp
+        date:
+        start_date: 2023-10
+        end_date: 2023-11
+        location: Paris, France
+        summary: GCP, Airflow, DBT, Spark
+        highlights:
+      - institution: Telecom ParisTech
+        area: Data & Knowledge
+        degree: Master
+        date:
+        start_date: 2018-09
+        end_date: 2019-08
+        location: Paris, France
+        summary: Data science
+        highlights:
+      - institution: Polytech Paris-Saclay
+        area: informatique
+        degree: Ingénieur
+        date:
+        start_date: 2013-09
+        end_date: 2016-08
+        location: Orsay, France
+        summary:
+        highlights:
+      - institution: DUT Orsay
+        area: Informatique
+        degree: DUT (Bac + 2)
+        date:
+        start_date: 2011-09
+        end_date: 2013-08
+        location: Orsay, France
+        summary:
+        highlights:
+      - institution: Lycée Fustel de Coulanges
+        area: scientifique
+        degree: Baccalauréat
+        date: 2011-09
+        start_date:
+        end_date:
+        location: Orsay, France
+        summary:
+        highlights:
+    certifications:
+      - label: GCP Professional Data Engineer
+        details: "[Credly](https://www.credly.com/badges/7a7abe2c-fdfd-4068-99e4-576cc2612797/public_url)"
+    projets:
+      - name: '[NYC Taxi GCP Pipeline](https://github.com/messaoudia/nyc-taxi-gcp-pipeline)'
+        date:
+        start_date: 2026-02
+        end_date: present
+        location:
+        summary: Conception d'un outil d'analyse, d'ingestion et de traitement des données des taxis de New York jusqu'à leur visualisation
+        highlights:
+          - "Pipeline GCP : [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline)"
+          - "Pipeline DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
+      - name: '[Earthquake GCP Pipeline](https://github.com/messaoudia/earthquake-project)'
+        date: 2023-11
+        start_date: 2023-11
+        end_date: 2023-11
+        location:
+        summary: Conception et développement d'une solution complète pour la collecte, le traitement et l'analyse de données sismiques sur l'infrastructure Google Cloud
+        highlights:
+          - "Pipeline GCP : [GitHub](https://github.com/messaoudia/earthquake-project)"
+          - Développement d'un outil d'agrégation d'événements sismiques depuis une API externe vers Google Cloud Storage (GCS)
+          - Mise en place de flux de traitement de données orchestrés par Airflow, assurant le passage des données du format brut (Bronze) au format exploitable (Gold)
+          - Analyse et visualisation des données traitées via BigQuery couplé à l'outil de BI Metabase
+          - Intégration de flux de données en temps réel depuis Cloud Storage vers Pub/Sub pour une ingestion continue
+          - "Technologies utilisées : ETL, Apache Airflow, Google Cloud Storage, Pub/Sub, BigQuery"
+      - name: '[Compétition Kaggle](https://github.com/messaoudia/Kaggle-Competition-Marketing-Dataset)'
+        date: 2017-10
+        start_date:
+        end_date:
+        location:
+        summary: Développement d'un modèle prédictif de machine learning pour anticiper la souscription de potentiels clients.
+        highlights:
+          - Conception et entraînement d'un modèle de classification binaire pour prédire la probabilité de souscription des utilisateurs
+          - Analyse exploratoire des données et préparation des features pour optimiser la performance du modèle
+          - "Technologies utilisées : Python, Jupyter Notebook"
+      - name: 'SpySeries - iOS Application'
+        date:
+        start_date: 2014-08
+        end_date: 2014-09
+        location:
+        summary: Développement d'une application mobile iOS pour le suivi et la gestion des séries télévisées, intégrant une base de données open source
+        highlights:
+          - Conception et développement d'une application native iOS pour le tracking de programmes TV
+    compétences:
+      - label: Langages
+        details: Python (avancé), SQL (intermédiaire), PySpark (intermédiaire), Bash (intermédiaire)
+      - label: Data engineering
+        details: GCP, Terraform, AWS, Databricks, Airflow, MongoDB, PostgreSQL, Elasticsearch, Elastic Cloud, Dataiku
+      - label: Stack GCP
+        details: Cloud Functions, Cloud Run, Artifact Registry, BigQuery, Cloud SQL, Cloud Storage, Pub/Sub, EventArc, IAM, KMS, Parameter Store, Cloud NAT, Dataform
+      - label: Data science
+        details: Pandas, Numpy, Azure OpenAI, AWS Bedrock, Ollama
+      - label: IaC et CI/CD
+        details: Terraform, Github actions, Jenkins, Docker
+      # - label: CI/CD
+      #   details: Github actions, Jenkins
+    langages:
+      - label: Anglais
+        details: Professionnel (Certification TOEIC)
+      - label: Français
+        details: Langue maternelle
+      - label: Arabe - Darijah
+        details: Langue maternelle
+    Centres d'intérêt:
+      - label: ""
+        details: "Code, course à pied, escalade"
+design:
+  theme: engineeringresumes
+  # page:
+  #   size: us-letter
+  #   top_margin: 0.7in
+  #   bottom_margin: 0.7in
+  #   left_margin: 0.7in
+  #   right_margin: 0.7in
+  #   show_footer: false
+  #   show_top_note: true
+  # colors:
+  #   body: rgb(0, 0, 0)
+  #   name: rgb(0, 0, 0)
+  #   headline: rgb(0, 0, 0)
+  #   connections: rgb(0, 0, 0)
+  #   section_titles: rgb(0, 0, 0)
+  #   links: rgb(0, 0, 0)
+  #   footer: rgb(128, 128, 128)
+  #   top_note: rgb(128, 128, 128)
+  typography:
+    line_spacing: 0.5em
+    alignment: left
+    date_and_location_column_alignment: right
+    font_family:
+      body: Calibri
+      name: Calibri
+      headline: Calibri
+      connections: Calibri
+      section_titles: Calibri
+    font_size:
+      body: 11pt
+      name: 24pt
+      headline: 16pt
+      sub_headline: 12pt
+      connections: 10pt
+      section_titles: 13pt
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: false
+      headline: false
+      connections: false
+      section_titles: true
+  links:
+    underline: true
+    show_external_link_icon: false
+  header:
+    alignment: center
+    # photo_width: 3.5cm
+    # photo_position: left
+    # photo_space_left: 0.4cm
+    # photo_space_right: 0.4cm
+    space_below_name: 0.4cm
+    space_below_headline: 0.23cm
+    space_below_connections: 0.7cm
+    connections:
+      phone_number_format: international
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: true
+      separator: '|'
+      space_between_connections: 0.6cm
+  section_titles:
+    type: with_full_line
+    line_thickness: 0.5pt
+    space_above: 0.5cm
+    space_below: 0.3cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.2cm
+    space_between_text_based_entries: 0.2cm
+    show_time_spans_in: [expériences, projets]
+  entries:
+    date_and_location_width: 4.15cm
+    side_space: 0cm
+    space_between_columns: 0.1cm
+    allow_page_break: true
+    short_second_row: false
+    degree_width: 1cm
+    summary:
+      space_above: 0.08cm
+      space_left: 0cm
+    highlights:
+      bullet: ●
+      nested_bullet: ●
+      space_left: 0cm
+      space_above: 0.08cm
+      space_between_items: 0.08cm
+      space_between_bullet_and_text: 0.3em
+  templates:
+    footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
+    top_note: ''
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE – END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+    one_line_entry:
+      main_column: '**LABEL:** DETAILS'
+    education_entry:
+      main_column: |-
+        **INSTITUTION**, DEGREE AREA -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      degree_column:
+      date_and_location_column: DATE
+    normal_entry:
+      main_column: |-
+        **NAME** -- **LOCATION**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+    experience_entry:
+      main_column: |-
+        **POSITION**, COMPANY -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+    publication_entry:
+      main_column: |-
+        **TITLE**
+        SUMMARY
+        AUTHORS
+        URL (JOURNAL)
+      date_and_location_column: DATE
+locale:
+  language: french
+  last_updated: "Dernière mise à jour"
+  month: mois
+  months: mois
+  year: an
+  years: ans
+  present: présent
+  phrases:
+    degree_with_area: DEGREE en AREA
+  month_abbreviations:
+    - Jan
+    - Fév
+    - Mars
+    - Avr
+    - Mai
+    - Juin
+    - Juil
+    - Août
+    - Sep
+    - Oct
+    - Nov
+    - Déc
+  month_names:
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+settings:
+  current_date: today
+  render_command:
+    output_folder: rendercv_output
+    design:
+    locale:
+    typst_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_${LANGUAGE_CODE}_CV.typ
+    pdf_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_${LANGUAGE_CODE}_CV.pdf
+    markdown_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_${LANGUAGE_CODE}_CV.md
+    html_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_${LANGUAGE_CODE}_CV.html
+    png_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_${LANGUAGE_CODE}_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: true
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
+  bold_keywords: []
+  pdf_title: NAME - CV
