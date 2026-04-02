@@ -30,22 +30,19 @@ cv:
 
     expériences:
       - company: Freelance
-        position: GCP Data Engineer + DBT
+        position: GCP Data Engineer + Dataform + DBT (projet freelance personnel)
         date:
         start_date: 2026-02
         end_date: present
         location: Paris, France
         summary: Conception d'un outil d'analyse, d'ingestion et de traitement des données des taxis de New York jusqu'à leur visualisation
         highlights:
-          - "Pipeline GCP : [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline)"
-          - "Pipeline DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
-          - "Déploiement du projet avec Terraform"
+          - "Pipeline GCP déployée avec Terraform + Dataform: [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline) | DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
           - Mise en place d'un Cloud Run Job pour l'ingestion de données dans Cloud Storage avec envoi de messages sur Pub/Sub
           - Synchronisation des données stockées dans Cloud Storage vers BigQuery en passant par EventArc
-          - Analyse des données et mise en place des phases de traitement avec DBT, en suivant l'architecture medallion (staging, intermediate, marts) incluant des tests et mise en place de macros
-          - Création et utilisation de divers comptes de service avec le moindre privilège (least privilege)
-          - Utilisation de l'emprunt d'identité de comptes de service
-          - "Compétences : Cloud Run, Artifact Registry, Cloud Storage, IAM, Secret Manager, Parameter Manager, BigQuery, DBT (DBT Core, tests, staging, marts, macros), EventArc, Pub/Sub, Cloud Scheduler, Workflows, DataForm, Looker"
+          - Analyse des données et mise en place des phases de traitement avec Dataform et DBT, en suivant l'architecture medallion (staging, intermediate, marts) incluant des tests et mise en place de macros
+          - Création et utilisation de divers comptes de service avec le moindre privilège (least privilege) + utilisation de l'emprunt d'identité de comptes de service
+          - "Compétences : Cloud Run, Artifact Registry, Cloud Storage, IAM, Secret Manager, Parameter Manager, BigQuery, Dataform, DBT (DBT Core, tests, staging, marts, macros), EventArc, Pub/Sub, Cloud Scheduler, DataForm, Looker"
       - company: Alten
         position: Cloud Data Engineer – Freelance
         date:
@@ -67,7 +64,7 @@ cv:
           - Administration de Databricks via la création de Bundles, Catalogs, External Locations, Clusters, et mise en œuvre d'une gouvernance avec privilèges minimum pour les utilisateurs
           - Homogénéisation des environnements de travail pour augmenter la vélocité de l'équipe (centraliser les scripts sur Github, conversion de code NodeJS en Python, centralisation de la documentation sur Confluence)
           - Animation de rétrospectives pour favoriser la croissance et la maturité technique de l'équipe
-          - "Compétences : ETL, Python, Terraform, PySpark, Databricks, Dataiku, IA générative, AWS, Azure IA"
+          - "Compétences : ETL, Python, Terraform, PySpark, PostgreSQL, Databricks, Dataiku, IA générative, AWS, Azure IA"
       - company: Le Wagon
         position: Assistant Enseignant – Data Engineer
         date:
@@ -165,8 +162,8 @@ cv:
         area: Data & Knowledge
         degree: Master
         date:
-        start_date: 2018-09
-        end_date: 2019-08
+        start_date: 2017-09
+        end_date: 2018-08
         location: Paris, France
         summary: Data science
         highlights:
