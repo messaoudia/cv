@@ -3,7 +3,7 @@ cv:
   name: Amin Messaoudi
   headline: Cloud Data Engineer Senior certifié GCP | Data Scientist
   sub_headline: Certified Google Professional Data Engineer
-  location: Ile-de-France
+  location: Rabat, Maroc
   email: ${EMAIL}
   # photo:
   phone: "${PHONE_NUMBER}"
@@ -22,34 +22,44 @@ cv:
   sections:
     Présentation:
       - Cloud Data Engineer spécialisé dans les écosystèmes cloud **GCP** et AWS et dans les plateformes Big Data tel que **Databricks**
-      - Disponible sous **1 mois**
+      # - Disponible sous **1 mois**
       # - RenderCV reads a CV written in a YAML file, and generates a PDF with professional typography.
       # - Each section title is arbitrary.
       # - You can choose any of the 9 entry types for each section.
       # - Markdown syntax is supported everywhere. This is **bold**, *italic*, and [link](https://example.com).
 
     expériences:
-      - company: Freelance
-        position: GCP Data Engineer + Dataform + DBT (projet freelance personnel)
+      - company: "Limagrain"
+        position: GCP Data Engineer – Freelance
         date:
-        start_date: 2026-02
-        end_date: present
-        location: Paris, France
-        summary: Conception d'un outil d'analyse, d'ingestion et de traitement des données des taxis de New York jusqu'à leur visualisation
+        start_date: 2026-05
+        end_date:
+        location: Remote
+        summary: Création de Data Product Finance pour des analyses P&L (Profit & Loss)
         highlights:
-          - "Pipeline GCP déployée avec Terraform + Dataform: [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline) | DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
-          - Mise en place d'un Cloud Run Job pour l'ingestion de données dans Cloud Storage avec envoi de messages sur Pub/Sub
-          - Synchronisation des données stockées dans Cloud Storage vers BigQuery en passant par EventArc
-          - Analyse des données et mise en place des phases de traitement avec Dataform et DBT, en suivant l'architecture medallion (staging, intermediate, marts) incluant des tests et mise en place de macros
-          - Création et utilisation de divers comptes de service avec le moindre privilège (least privilege) + utilisation de l'emprunt d'identité de comptes de service
-          - "Compétences : Cloud Run, Artifact Registry, Cloud Storage, IAM, Secret Manager, Parameter Manager, BigQuery, Dataform, DBT (DBT Core, tests, staging, marts, macros), EventArc, Pub/Sub, Cloud Scheduler, DataForm, Looker"
-      - company: Alten
+          - "Développement, orchestration et déploiement de divers pipelines avec comme I/O : Fichers métiers / Data Product sur Big Query + Dataplex à vocation d'être consommé par d'autres pipelines ou PowerBI"
+          - Maintenance de divers Data Product
+      # - company: Freelance
+      #   position: GCP Data Engineer + Dataform + DBT (projet freelance personnel)
+      #   date:
+      #   start_date: 2026-02
+      #   end_date: present
+      #   location: Paris, France
+      #   summary: Conception d'un outil d'analyse, d'ingestion et de traitement des données des taxis de New York jusqu'à leur visualisation
+      #   highlights:
+      #     - "Pipeline GCP déployée avec Terraform + Dataform: [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline) | DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
+      #     - Mise en place d'un Cloud Run Job pour l'ingestion de données dans Cloud Storage avec envoi de messages sur Pub/Sub
+      #     - Synchronisation des données stockées dans Cloud Storage vers BigQuery en passant par EventArc
+      #     - Analyse des données et mise en place des phases de traitement avec Dataform et DBT, en suivant l'architecture medallion (staging, intermediate, marts) incluant des tests et mise en place de macros
+      #     - Création et utilisation de divers comptes de service avec le moindre privilège (least privilege) + utilisation de l'emprunt d'identité de comptes de service
+      #     - "Compétences : Cloud Run, Artifact Registry, Cloud Storage, IAM, Secret Manager, Parameter Manager, BigQuery, Dataform, DBT (DBT Core, tests, staging, marts, macros), EventArc, Pub/Sub, Cloud Scheduler, DataForm, Looker"
+      - company: "Lincoln/Alten - Engie"
         position: Cloud Data Engineer – Freelance
         date:
         start_date: 2024-06
-        end_date: present
+        end_date: 2026-05
         location: Courbevoie, France
-        summary: Pilotage d'initiatives d'ingénierie des données au sein du secteur des énergies renouvelables d'un grand groupe français, développement et déploiement de pipelines ETL et de solutions d'IA générative pour automatiser les processus et optimiser l'efficacité opérationnelle afin de répondre aux besoins métiers.
+        summary: Pilotage d'initiatives d'ingénierie des données au sein du secteur des énergies renouvelables d'Engie, développement et déploiement de pipelines ETL et de solutions d'IA générative pour automatiser les processus et optimiser l'efficacité opérationnelle afin de répondre aux besoins métiers.
         highlights:
           - Développement, orchestration et déploiement de plus de 10 pipelines ETL et de solutions d'IA générative améliorant l'efficacité opérationnelle dans le secteur des énergies renouvelables
           # - Orchestration de pipelines pour automatiser les processus et améliorer l'expérience utilisateur finale
@@ -78,7 +88,7 @@ cv:
       - company: Clustaar
         position: NLP Engineer - Data Engineer
         date:
-        start_date: 2018-09
+        start_date: 2018-03 # 2018-09
         end_date: 2023-09
         location: Paris, France
         summary: Amélioration et supervision d'un moteur NLP développé en interne
@@ -96,37 +106,37 @@ cv:
           - Développement d'API backend, avec mise en place de schéma strict, pour un outil SEO permettant aux consultants de générer des rapports d'amélioration de référencement pour leurs clients, avec extraction de ranking Google, position p0 et d'autres indicateurs clés de performance
           - Formation des clients et des équipes internes pour les aider à comprendre le fonctionnement du moteur NLP et les méthodes d'amélioration
           - "Compétences : GCP, Python, NLP, Pandas, Kubernetes, MongoDB, PostgreSQL, Elasticsearch, Elastic Cloud, Sentry"
-      - company: Clustaar
-        position: NLP Engineer - Data Engineer (Intern)
-        date:
-        start_date: 2018-03
-        end_date: 2018-08
-        location: Paris, France
-        summary: Amélioration et supervision d'un moteur NLP développé en interne
-        highlights:
-          - Implémentation de plusieurs prototypes pour améliorer le moteur NLP
-          - "Compétences : Python, NLP, Pandas, MongoDB, PostgreSQL, Elasticsearch, Elastic Cloud"
+      # - company: Clustaar
+      #   position: NLP Engineer - Data Engineer (Intern)
+      #   date:
+      #   start_date: 2018-03
+      #   end_date: 2018-08
+      #   location: Paris, France
+      #   summary: Amélioration et supervision d'un moteur NLP développé en interne
+      #   highlights:
+      #     - Implémentation de plusieurs prototypes pour améliorer le moteur NLP
+      #     - "Compétences : Python, NLP, Pandas, MongoDB, PostgreSQL, Elasticsearch, Elastic Cloud"
       - company: Dassault Systèmes
         position: Software Engineer
         date:
-        start_date: 2016-09
+        start_date: 2016-04 # 2016-09
         end_date: 2017-09
         location: Vélizy, France
         summary: Développement de composants 2D pour une application web 3D CATIA
         highlights:
           - Conception et intégration de composants 2D pour une interface web 3D CATIA
           - "Compétences : NodeJS, ThreeJS"
-      - company: Dassault Systèmes
-        position: Software Engineer (Intern)
-        date:
-        start_date: 2016-03
-        end_date: 2016-08
-        location: Vélizy, France
-        summary: Développement de différents prototypes avec Three.JS
-        highlights:
-          - Ajout d'une fonctionnalité permettant d'intégrer des modèles 2D dans des visualisations 3D
-          - Modernisation d’un composant lecteur vidéo à l’aide de technologies récentes
-          - "Compétences : NodeJS, ThreeJS"
+      # - company: Dassault Systèmes
+      #   position: Software Engineer (Intern)
+      #   date:
+      #   start_date: 2016-04
+      #   end_date: 2016-08
+      #   location: Vélizy, France
+      #   summary: Développement de différents prototypes avec Three.JS
+      #   highlights:
+      #     - Ajout d'une fonctionnalité permettant d'intégrer des modèles 2D dans des visualisations 3D
+      #     - Modernisation d’un composant lecteur vidéo à l’aide de technologies récentes
+      #     - "Compétences : NodeJS, ThreeJS"
       - company: Shanghai Jiao Tong University
         position: Software Engineer (Intern)
         date:
@@ -205,8 +215,12 @@ cv:
         location:
         summary: Conception d'un outil d'analyse, d'ingestion et de traitement des données des taxis de New York jusqu'à leur visualisation
         highlights:
-          - "Pipeline GCP : [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline)"
-          - "Pipeline DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
+          - "Pipeline GCP déployée avec Terraform + Dataform: [GitHub](https://github.com/messaoudia/nyc-taxi-gcp-pipeline) | DBT : [GitHub⁠](https://github.com/messaoudia/dbt_nyc_taxi_bigquery)"
+          - Mise en place d'un Cloud Run Job pour l'ingestion de données dans Cloud Storage avec envoi de messages sur Pub/Sub
+          - Synchronisation des données stockées dans Cloud Storage vers BigQuery en passant par EventArc
+          - Analyse des données et mise en place des phases de traitement avec Dataform et DBT, en suivant l'architecture medallion (staging, intermediate, marts) incluant des tests et mise en place de macros
+          - Création et utilisation de divers comptes de service avec le moindre privilège (least privilege) + utilisation de l'emprunt d'identité de comptes de service
+          - "Compétences : Cloud Run, Artifact Registry, Cloud Storage, IAM, Secret Manager, Parameter Manager, BigQuery, Dataform, DBT (DBT Core, tests, staging, marts, macros), EventArc, Pub/Sub, Cloud Scheduler, DataForm, Looker"
       - name: '[Earthquake GCP Pipeline](https://github.com/messaoudia/earthquake-project)'
         date: 2023-11
         start_date: 2023-11
